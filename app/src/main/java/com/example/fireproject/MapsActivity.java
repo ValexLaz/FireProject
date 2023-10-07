@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.fireproject.databinding.ActivityMapsBinding;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -23,7 +24,6 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.Circle;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
-import com.example.fireproject.databinding.ActivityMapsBinding;
 import com.google.android.gms.maps.model.LatLngBounds;
 
 import org.jetbrains.annotations.NotNull;
@@ -75,7 +75,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(MapsActivity.this, SensoresActivity.class);
+                Intent intent = new Intent(MapsActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
