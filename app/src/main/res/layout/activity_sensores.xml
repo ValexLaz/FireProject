@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SensoresActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:text="STOP FIRE"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Alerta Temprana"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:text="Live Fire" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:text="Protocol" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:text="Warnings" />
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#FADBD8"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Sensor 1: Chiquitania"
+                    android:textSize="20sp"
+                    android:textStyle="" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#FADBD8"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Sensor 2: El chaco"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#FADBD8"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sensor 3: Zonas Periurbanas"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle=""
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#F78181"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gases toxicos:"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle=""
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Metano,Butano, Co2"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle=""
+                    />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
