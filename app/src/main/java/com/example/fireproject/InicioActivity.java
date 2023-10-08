@@ -14,6 +14,9 @@ public class InicioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
         Button button = findViewById(R.id.button);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

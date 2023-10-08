@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Hola mundo", Toast.LENGTH_SHORT).show();
 
                 Marker ubicacion = null;
                 for (Coordinate coordinates : coordinatesList) {
