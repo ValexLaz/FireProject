@@ -76,6 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Llamar por emergencia"
+                android:background="@drawable/button_custom"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>

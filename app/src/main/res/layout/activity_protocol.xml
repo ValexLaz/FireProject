@@ -49,22 +49,22 @@
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="LIVE FIRE" />
+                android:text="Live Fire"
+                android:background="@drawable/button_custom" /> <!-- Aquí se aplica el estilo personalizado -->
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="Protocol" />
+                android:text="Protocol"
+                android:background="@drawable/button_custom" /> <!-- Aplicar el estilo a los demás botones también -->
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="WARNINGS" />
+                android:text="Warnings"
+                android:background="@drawable/button_custom" />
         </LinearLayout>
     </LinearLayout>
 
@@ -100,7 +100,7 @@
                     android:layout_gravity="bottom|center_horizontal"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
-                    android:text="Evacue inmediatamente por areas despejadas y mantenga las salidas libres de obstaculos si es posible"
+                    android:text="  Evacue inmediatamente por areas despejadas y mantenga las salidas libres de obstaculos si es posible"
                     android:textSize="20sp"
                     android:textStyle="" />
             </androidx.cardview.widget.CardView>
@@ -122,9 +122,7 @@
                     android:layout_gravity="bottom|center_horizontal"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
-                    android:text="NO se demore para recoger objetos personales.
-                            •	 NO regrese a la zona evacuada bajo ningún concepto.
-                             "
+                    android:text="NO se demore para recoger objetos personales. NO regrese a la zona evacuada bajo ningún concepto."
                     android:layout_marginLeft="5dp"
                     android:textSize="20sp"
                     android:textStyle="" />
@@ -175,6 +173,7 @@
                     android:textStyle=""
                     />
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -189,7 +188,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ponga atención al comportamiento del fuego y del viento, porque el incendio puede cambiar de dirección e intensidad rápidamente."
+                    android:text="Síntomas de intoxicación por humo: tales como tos con o sin mucosidad, latido acelerado, garganta irritada, dificultad para respirar, dolor de pecho, picor en los ojos, dolor de cabeza y síntomas de asma."
                     android:layout_gravity="bottom|center_horizontal"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
@@ -212,31 +211,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="síntomas de intoxicación por humo, tales como tos con o sin mucosidad, latido acelerado, garganta irritada, dificultad para respirar, dolor de pecho, picor en los ojos, dolor de cabeza y síntomas de asma."
-                    android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:textSize="20sp"
-                    android:layout_marginLeft="5dp"
-                    android:textStyle=""
-                    />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardElevation="10dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="#FADBD8"
-                app:cardMaxElevation="8dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Si no tiene la posibilidad de escapar lo primero que debe hacer es:
-                             Si tiene un curso de agua cerca, agacharse en ella (ribera de un río, lago o laguna) y cubrirse la parte superior de su cuerpo con ropa seca."
+                    android:text="Si no tiene la posibilidad de escapar lo primero que debe hacer es: Si tiene un curso de agua cerca, agacharse en ella (ribera de un río, lago o laguna) y cubrirse la parte superior de su cuerpo con ropa seca."
                     android:layout_gravity="bottom|center_horizontal"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
@@ -256,6 +231,7 @@
         android:layout_gravity="center"
         android:text="Llamar por emergencia"
         android:gravity="center"
+        android:background="@drawable/button_custom"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 

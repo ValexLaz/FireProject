@@ -73,6 +73,49 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 }
             }
         });
+        Button button4 = findViewById(R.id.button4);
+        Button button5 = findViewById(R.id.button5);
+        Button button6 = findViewById(R.id.button6);
+        ImageView imageButton = findViewById(R.id.imageButton);
+
+
+        // OnClickListener para el ImageButton
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SensoresActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainActivity.this, ProtocolActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void parseCSVToJSON(String csvData) {
@@ -192,66 +235,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     }
                 });
         builder.create().show();
-
-        Button button4 = findViewById(R.id.button4);
-        Button button5 = findViewById(R.id.button5);
-        Button button6 = findViewById(R.id.button6);
-        ImageView imageButton = findViewById(R.id.imageButton);
-
-        Button boton = findViewById(R.id.boton);
-
-        // OnClickListener para el ImageButton
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SensoresActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        boton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                String numeroEmergencia = "73609554";
-
-                Intent intent = new Intent(Intent.ACTION_CALL);
-                intent.setData(Uri.parse("tel:" + numeroEmergencia));
-
-                if (checkSelfPermission(android.Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
-                    startActivity(intent);
-                } else {
-
-                    requestPermissions(new String[]{Manifest.permission.CALL_PHONE}, 1);
-                }
-            }
-        });
-
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(MainActivity.this, ProtocolActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        button6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
-                startActivity(intent);
-            }
-        });
     }
+
 }

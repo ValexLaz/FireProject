@@ -47,23 +47,22 @@
                     android:id="@+id/button4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="LIVE FIRE" />
+                    android:text="Live Fire"
+                    android:background="@drawable/button_custom" /> <!-- Aquí se aplica el estilo personalizado -->
 
                 <Button
                     android:id="@+id/button5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="Protocol" />
+                    android:text="Protocol"
+                    android:background="@drawable/button_custom" /> <!-- Aplicar el estilo a los demás botones también -->
 
                 <Button
                     android:id="@+id/button6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="WARNINGS" />
+                    android:text="Warnings"
+                    android:background="@drawable/button_custom" />
             </LinearLayout>
 
 
@@ -72,7 +71,7 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="20dp"
                 android:layout_margin="5dp"
-                app:cardBackgroundColor="#FADBD8"
+                app:cardBackgroundColor="#D84626"
                 app:cardPreventCornerOverlap="true"
                 app:cardUseCompatPadding="true"
                 >
@@ -81,7 +80,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Sensor 1: Chiquitania"
+                    android:layout_margin="5dp"
+                    android:text="Sensor 1: Chiquitania ES POSIBLE QUE ESTA ZONA SEA DE RIESGO"
                     android:textSize="20sp"
                     android:textStyle="" />
             </androidx.cardview.widget.CardView>

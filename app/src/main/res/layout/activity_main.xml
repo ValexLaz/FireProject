@@ -49,22 +49,22 @@
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="LIVE FIRE" />
+                android:text="Live Fire"
+                android:background="@drawable/button_custom" /> <!-- Aquí se aplica el estilo personalizado -->
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="Protocol" />
+                android:text="Protocol"
+                android:background="@drawable/button_custom" /> <!-- Aplicar el estilo a los demás botones también -->
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="WARNINGS" />
+                android:text="Warnings"
+                android:background="@drawable/button_custom" />
         </LinearLayout>
 
         <LinearLayout
@@ -93,6 +93,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:backgroundTint="#D84626"
                     android:text="Ver incendios"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
