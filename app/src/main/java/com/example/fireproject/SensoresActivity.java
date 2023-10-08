@@ -13,8 +13,10 @@ public class SensoresActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_sensores);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
         Button button4 = findViewById(R.id.button4);
         Button button5 = findViewById(R.id.button5);
         Button button6 = findViewById(R.id.button6);
@@ -23,7 +25,7 @@ public class SensoresActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(SensoresActivity.this, SensoresActivity.class);
+                Intent intent = new Intent(SensoresActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

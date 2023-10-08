@@ -19,6 +19,9 @@ public class ProtocolActivity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_protocol);
+            if (getSupportActionBar() != null) {
+                getSupportActionBar().hide();
+            }
 
             Button button4 = findViewById(R.id.button4);
             Button button5 = findViewById(R.id.button5);
@@ -59,7 +62,7 @@ public class ProtocolActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
 
-                    Intent intent = new Intent(ProtocolActivity.this, SensoresActivity.class);
+                    Intent intent = new Intent(ProtocolActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
             });
